@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Portofolio Fayi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body data-theme="dark">
+<nav class="fixed w-full z-50 top-0 transition-colors duration-500" style="background: var(--nav-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-color);">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="../intro/" class="text-xl font-bold tracking-[0.15em]" style="color: var(--text-main)">
+            FAYI<span class="text-cyan-400">.</span>
+        </a>
+        <div class="flex items-center space-x-8">
+            <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.2em] font-bold">
+                <a href="../intro/" class="hover:text-cyan-400 transition" style="color: var(--text-muted)">Intro</a>
+                <a href="../skills/" class="hover:text-cyan-400 transition" style="color: var(--text-muted)">Skills</a>
+                <a href="../certificates/" class="hover:text-cyan-400 transition" style="color: var(--text-muted)">Certificates</a>
+                <a href="../projects/" class="hover:text-cyan-400 transition" style="color: var(--text-muted)">Projects</a>
+            </div>
+            <button onclick="toggleTheme()" class="theme-toggle" id="themeBtn" aria-label="Ganti tema">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+<main>
+<section id="skills" class="py-24 transition-colors duration-500">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-black mb-16 tracking-tighter uppercase">Technical <span class="text-cyan-400 italic">Core.</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- 1. MikroTik Configuration -->
+                <div class="p-8 cyber-border rounded-2xl group transition hover:border-cyan-400/50">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center border border-cyan-500/20">
+                            <i class="fas fa-router text-cyan-400 text-xl"></i>
+                        </div>
+                        <span class="text-[10px] code-font opacity-40">SKILL_01</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 italic" style="color: var(--text-main)">MikroTik Configuration</h3>
+                    <p class="text-sm mb-4" style="color: var(--text-muted)">Routing, Switching, Firewall, and Bandwidth Management management using Winbox/CLI.</p>
+                    <div class="skill-terminal code-font">
+                        <div class="text-cyan-400/70">admin@mikrotik: > /ip/address</div>
+                        <div class="typing-anim text-white/70">adding address=192.168.88.1/24...</div>
+                        <div class="text-green-400">[DONE] Interface ether1 active</div>
+                    </div>
+                </div>
+
+                <!-- 2. Simple UI Web/App Design -->
+                <div class="p-8 cyber-border rounded-2xl group transition hover:border-purple-400/50">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center border border-purple-500/20">
+                            <i class="fas fa-drafting-compass text-purple-400 text-xl"></i>
+                        </div>
+                        <span class="text-[10px] code-font opacity-40">SKILL_02</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 italic" style="color: var(--text-main)">UI/UX Web & App Design</h3>
+                    <p class="text-sm mb-4" style="color: var(--text-muted)">Creating clean, modern, and user-centric interfaces using Figma and CSS frameworks.</p>
+                    <div class="skill-terminal code-font">
+                        <div class="text-purple-400/70">.glass-morphism {</div>
+                        <div class="typing-anim text-white/70">  backdrop-filter: blur(10px);</div>
+                        <div class="text-purple-400/70">}</div>
+                    </div>
+                </div>
+
+                <!-- 3. Linux System Administration -->
+                <div class="p-8 cyber-border rounded-2xl group transition hover:border-orange-400/50">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center border border-orange-500/20">
+                            <i class="fab fa-linux text-orange-400 text-xl"></i>
+                        </div>
+                        <span class="text-[10px] code-font opacity-40">SKILL_03</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 italic" style="color: var(--text-main)">Linux Administration</h3>
+                    <p class="text-sm mb-4" style="color: var(--text-muted)">Managing Ubuntu/Debian servers, user permissions, and directory structure via Terminal.</p>
+                    <div class="skill-terminal code-font">
+                        <div class="text-orange-400/70">root@cyber-media:~# apt update</div>
+                        <div class="typing-anim text-white/70">Fetching 24.5MB of data...</div>
+                        <div class="text-orange-400/70">Packages updated successfully.</div>
+                    </div>
+                </div>
+
+                <!-- 4. Network Cabling -->
+                <div class="p-8 cyber-border rounded-2xl group transition hover:border-green-400/50">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center border border-green-500/20">
+                            <i class="fas fa-ethernet text-green-400 text-xl"></i>
+                        </div>
+                        <span class="text-[10px] code-font opacity-40">SKILL_04</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 italic" style="color: var(--text-main)">Network Cabling</h3>
+                    <p class="text-sm mb-4" style="color: var(--text-muted)">Professional crimping for UTP cables (Straight/Cross) and infrastructure setup.</p>
+                    <div class="skill-terminal code-font">
+                        <div class="text-green-400/70">Testing Cable: RJ45 CAT6</div>
+                        <div class="typing-anim text-white/70">1-1, 2-2, 3-3, 4-4, 5-5, 6-6, 7-7, 8-8</div>
+                        <div class="text-green-400">[STATUS] Connection Stable 1Gbps</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="py-20 border-t border-white/5 text-center">
+        <p class="text-[10px] font-bold tracking-[0.5em] uppercase opacity-40">
+            Â© FAYI PORTOFOLIO 
+        </p>
+    </footer>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

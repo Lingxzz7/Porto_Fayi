@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro | Portofolio Fayi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body data-theme="dark">
+<nav class="fixed w-full z-50 top-0 transition-colors duration-500" style="background: var(--nav-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-color);">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="../intro/" class="text-xl font-bold tracking-[0.15em]" style="color: var(--text-main)">
+            FAYI<span class="text-cyan-400">.</span>
+        </a>
+        <div class="flex items-center space-x-8">
+            <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.2em] font-bold">
+                <a href="../intro/" class="hover:text-cyan-400 transition" style="color: var(--text-muted)">Intro</a>
+                <a href="../skills/" class="hover:text-cyan-400 transition" style="color: var(--text-muted)">Skills</a>
+                <a href="../certificates/" class="hover:text-cyan-400 transition" style="color: var(--text-muted)">Certificates</a>
+                <a href="../projects/" class="hover:text-cyan-400 transition" style="color: var(--text-muted)">Projects</a>
+            </div>
+            <button onclick="toggleTheme()" class="theme-toggle" id="themeBtn" aria-label="Ganti tema">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+<main>
+<section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center relative px-6 gap-12 pt-20">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <div class="absolute top-1/4 left-10 w-96 h-96 bg-cyan-600 rounded-full blur-[150px]"></div>
+            <div class="absolute bottom-1/4 right-10 w-96 h-96 bg-purple-600 rounded-full blur-[150px]"></div>
+        </div>
+        
+        <div class="max-w-2xl text-center md:text-left z-10 order-2 md:order-1">
+            <h2 class="code-font text-cyan-400 mb-4 tracking-[0.4em] text-sm font-bold uppercase">System Initialization...</h2>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 gradient-text tracking-tighter italic uppercase">Designed to Code.</h1>
+            <p class="text-lg leading-relaxed font-light mb-10" style="color: var(--text-muted)">
+                I'm a <span style="color: var(--text-main)" class="font-medium">Digital Multimedia student at Politeknik Negeri Jakarta</span>. I design and build clear, functional digital experiences.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6">
+                <button onclick="location.href='../projects/'" class="btn-futuristic">
+                    Explore Projects <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                </button>
+                <button onclick="location.href='../skills/'" class="btn-futuristic btn-secondary">
+                    Check Skills
+                </button>
+            </div>
+            <div class="social-links mt-8 flex flex-wrap items-center justify-center md:justify-start gap-3" aria-label="Social media profiles">
+                <a class="social-link-placeholder" href="https://www.instagram.com/fledgling.design?psln=MTcwZXVkajdsdTNmZA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile" title="Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a class="social-link-placeholder" href="https://github.com/Lingxzz7" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a class="social-link-placeholder" href="https://www.linkedin.com/in/fayi-adli-nugroho-a9b62a31a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Server Animation -->
+        <div class="z-10 order-1 md:order-2 server-container">
+            <div class="server-rack">
+                <div class="server-unit"><div class="led-blink blinking"></div><div class="led-blink blinking alt"></div><div class="h-1 w-24 bg-current opacity-10 rounded"></div><div class="data-stream"></div></div>
+                <div class="server-unit"><div class="led-blink blinking"></div><div class="led-blink blinking alt" style="animation-delay: 0.2s"></div><div class="h-1 w-32 bg-current opacity-10 rounded"></div><div class="data-stream" style="animation-delay: 1s"></div></div>
+                <div class="server-unit"><div class="led-blink blinking" style="animation-delay: 0.4s"></div><div class="led-blink blinking alt" style="animation-delay: 0.1s"></div><div class="h-1 w-16 bg-current opacity-10 rounded"></div><div class="data-stream" style="animation-delay: 0.5s"></div></div>
+                <div class="server-unit"><div class="led-blink blinking" style="background:var(--text-main)"></div><div class="h-1 w-20 bg-current opacity-10 rounded"></div></div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="py-20 border-t border-white/5 text-center">
+        <p class="text-[10px] font-bold tracking-[0.5em] uppercase opacity-40">
+            FAYI PORTOFOLIO 
+        </p>
+    </footer>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
+
